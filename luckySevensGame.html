@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="luckySevens.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
+    <title>Lucky Sevens</title>
+  </head>
+
+  <body>
+    <div class="container col-3">
+      <h1>Lucky Sevens</h1>
+      Starting Bet: $<input type="number" id="betAmount" placeholder="0.00"/> <br>
+      <button type="button" class="btn btn-primary" id="play" onclick="startGame();">PLAY</button>
+    </div>
+
+       <table id="resultsTable" class="table" style="display:none;">
+         <tbody>
+           <tr>
+           <th scope="row">Starting Bet</th>
+           <td><span id="start"></span></td>
+           </tr>
+           <tr>
+           <th scope="row">Total Rolls Before Going Broke</th>
+           <td><span id="total"></span></td>
+           </tr>
+           <tr>
+           <th scope="row">Highest Amount Won</th>
+           <td><span id="highest"></span></td>
+           </tr>
+           <tr>
+           <th scope="row">Roll Count at Highest Amount Won</th>
+           <td><span id="count"></span></td>
+           </tr>
+        </tbody>
+       </table>
+
+  </body>
+</html>
